@@ -85,6 +85,10 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.layer == LayerMask.NameToLayer("Ground")) {
 		isJumping = false;
 		}
+
+		if (other.gameObject.layer == LayerMask.NameToLayer("ElevateGround")) {
+		isJumping = false;
+		}
 	}
 
 }
